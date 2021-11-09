@@ -17,24 +17,38 @@
     "min_phantom_version": "4.6.19142",
     "app_wizard_version": "1.0.0",
     "pip_dependencies": {
-        "pypi": [
+        "wheel": [
             {
-                "module": "requests"
+                "module": "backports.functools_lru_cache",
+                "input_file": "wheels/backports.functools_lru_cache-1.6.4-py2.py3-none-any.whl"
             },
             {
-                "module": "bs4"
+                "module": "beautifulsoup4",
+                "input_file": "wheels/beautifulsoup4-4.9.1-py2-none-any.whl"
             },
             {
-                "module": "pudb"
+                "module": "certifi",
+                "input_file": "wheels/certifi-2021.10.8-py2.py3-none-any.whl"
             },
             {
-                "module": "argparse"
+                "module": "chardet",
+                "input_file": "wheels/chardet-3.0.4-py2.py3-none-any.whl"
             },
             {
-                "module": "threatresponse"
+                "module": "idna",
+                "input_file": "wheels/idna-2.10-py2.py3-none-any.whl"
             },
             {
-                "module": "humanize"
+                "module": "requests",
+                "input_file": "wheels/requests-2.25.0-py2.py3-none-any.whl"
+            },
+            {
+                "module": "soupsieve",
+                "input_file": "wheels/soupsieve-1.9.6-py2.py3-none-any.whl"
+            },
+            {
+                "module": "urllib3",
+                "input_file": "wheels/urllib3-1.26.7-py2.py3-none-any.whl"
             }
         ]
     },
