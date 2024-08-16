@@ -15,22 +15,21 @@
 #
 #
 # Phantom App imports
-import phantom.app as phantom
-from phantom.base_connector import BaseConnector
-from phantom.action_result import ActionResult
-
-# Usage of the consts file is recommended
-# from ciscothreatresponse_consts import *
-from datetime import datetime, timedelta
 import functools
 import json
 import re
-from bs4 import UnicodeDammit
+from collections import Counter
+# Usage of the consts file is recommended
+# from ciscothreatresponse_consts import *
+from datetime import datetime, timedelta
 
 import humanize
+import phantom.app as phantom
 import requests
-from collections import Counter
-from requests.exceptions import HTTPError, ConnectionError
+from bs4 import UnicodeDammit
+from phantom.action_result import ActionResult
+from phantom.base_connector import BaseConnector
+from requests.exceptions import ConnectionError, HTTPError
 from threatresponse import ThreatResponse
 from threatresponse.exceptions import RegionError
 
@@ -387,8 +386,9 @@ class CiscoThreatResponseConnector(BaseConnector):
 
 if __name__ == '__main__':
 
-    import pudb
     import argparse
+
+    import pudb
 
     pudb.set_trace()
 
